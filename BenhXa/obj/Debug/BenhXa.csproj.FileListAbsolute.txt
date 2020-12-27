@@ -1,0 +1,12 @@
+D:\BenhXa\BenhXa\bin\Debug\BenhXa.exe.config
+D:\BenhXa\BenhXa\bin\Debug\BenhXa.exe
+D:\BenhXa\BenhXa\bin\Debug\BenhXa.pdb
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.csprojAssemblyReference.cache
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.Properties.Resources.resources
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.csproj.GenerateResource.cache
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.csproj.CoreCompileInputs.cache
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.exe
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.pdb
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.MainMenu.resources
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.TaoDonThuoc.resources
+D:\BenhXa\BenhXa\obj\Debug\BenhXa.ThemMoiBN.resources
