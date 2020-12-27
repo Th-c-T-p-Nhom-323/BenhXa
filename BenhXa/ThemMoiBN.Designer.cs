@@ -30,21 +30,21 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txt_donvi = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbb_Sex = new System.Windows.Forms.ComboBox();
+            this.dtp_NS = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_capbac = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_tenBN = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_chucvu = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_Them = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,9 +53,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(386, 37);
+            this.label1.Location = new System.Drawing.Point(343, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 26);
+            this.label1.Size = new System.Drawing.Size(237, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "THÊM MỚI BỆNH NHÂN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -64,157 +64,171 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.AliceBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txt_donvi);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.cbb_Sex);
+            this.panel1.Controls.Add(this.dtp_NS);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txt_capbac);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txt_tenBN);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_chucvu);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(12, 97);
+            this.panel1.Location = new System.Drawing.Point(11, 78);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1032, 307);
+            this.panel1.Size = new System.Drawing.Size(918, 246);
             this.panel1.TabIndex = 1;
             // 
-            // label2
+            // txt_donvi
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(79, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Mã BN";
+            this.txt_donvi.Location = new System.Drawing.Point(126, 193);
+            this.txt_donvi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_donvi.Name = "txt_donvi";
+            this.txt_donvi.Size = new System.Drawing.Size(165, 22);
+            this.txt_donvi.TabIndex = 13;
             // 
-            // textBox1
+            // label8
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 26);
-            this.textBox1.TabIndex = 1;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(70, 193);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 17);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Đơn vị";
             // 
-            // textBox2
+            // cbb_Sex
             // 
-            this.textBox2.Location = new System.Drawing.Point(814, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 26);
-            this.textBox2.TabIndex = 3;
+            this.cbb_Sex.FormattingEnabled = true;
+            this.cbb_Sex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cbb_Sex.Location = new System.Drawing.Point(450, 117);
+            this.cbb_Sex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbb_Sex.Name = "cbb_Sex";
+            this.cbb_Sex.Size = new System.Drawing.Size(169, 24);
+            this.cbb_Sex.TabIndex = 11;
             // 
-            // label3
+            // dtp_NS
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(736, 155);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Chức vụ";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(142, 143);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 26);
-            this.textBox3.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(64, 149);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Họ và tên";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(814, 73);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 26);
-            this.textBox4.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(736, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Cấp bậc";
+            this.dtp_NS.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NS.Location = new System.Drawing.Point(450, 61);
+            this.dtp_NS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_NS.Name = "dtp_NS";
+            this.dtp_NS.Size = new System.Drawing.Size(178, 22);
+            this.dtp_NS.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(402, 73);
+            this.label6.Location = new System.Drawing.Point(357, 58);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 20);
+            this.label6.Size = new System.Drawing.Size(71, 17);
             this.label6.TabIndex = 9;
             this.label6.Text = "Ngày sinh";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(402, 152);
+            this.label7.Location = new System.Drawing.Point(357, 122);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
+            this.label7.Size = new System.Drawing.Size(60, 17);
             this.label7.TabIndex = 8;
             this.label7.Text = "Giới tính";
             // 
-            // dateTimePicker1
+            // txt_capbac
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(506, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 10;
+            this.txt_capbac.Location = new System.Drawing.Point(724, 58);
+            this.txt_capbac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_capbac.Name = "txt_capbac";
+            this.txt_capbac.Size = new System.Drawing.Size(165, 22);
+            this.txt_capbac.TabIndex = 7;
             // 
-            // comboBox1
+            // label5
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(506, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 28);
-            this.comboBox1.TabIndex = 11;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(654, 61);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Cấp bậc";
             // 
-            // textBox5
+            // txt_tenBN
             // 
-            this.textBox5.Location = new System.Drawing.Point(142, 238);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(185, 26);
-            this.textBox5.TabIndex = 13;
+            this.txt_tenBN.Location = new System.Drawing.Point(126, 114);
+            this.txt_tenBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_tenBN.Name = "txt_tenBN";
+            this.txt_tenBN.Size = new System.Drawing.Size(165, 22);
+            this.txt_tenBN.TabIndex = 5;
             // 
-            // label8
+            // label4
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(79, 241);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 20);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Đơn vị";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(57, 119);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 17);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Họ và tên";
             // 
-            // button1
+            // txt_chucvu
             // 
-            this.button1.Location = new System.Drawing.Point(453, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 31);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txt_chucvu.Location = new System.Drawing.Point(724, 122);
+            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_chucvu.Name = "txt_chucvu";
+            this.txt_chucvu.Size = new System.Drawing.Size(165, 22);
+            this.txt_chucvu.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(654, 124);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Chức vụ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(126, 56);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(165, 22);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(70, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã BN";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Location = new System.Drawing.Point(403, 346);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(84, 25);
+            this.btn_Them.TabIndex = 14;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // ThemMoiBN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1056, 485);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(939, 388);
+            this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ThemMoiBN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm mới bệnh nhân";
@@ -230,19 +244,19 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cbb_Sex;
+        private System.Windows.Forms.DateTimePicker dtp_NS;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_capbac;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_tenBN;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_chucvu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btn_Them;
+        private System.Windows.Forms.TextBox txt_donvi;
         private System.Windows.Forms.Label label8;
     }
 }

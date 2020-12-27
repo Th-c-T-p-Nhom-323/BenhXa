@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +55,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\BACSI.cs" />
+    <Compile Include="DAO\BENHNHAN.cs" />
+    <Compile Include="DAO\CHITIETTOATHUOC.cs" />
+    <Compile Include="DAO\DB.cs" />
+    <Compile Include="DAO\HOSOBENHAN.cs" />
+    <Compile Include="DAO\PHIEUDANGKY.cs" />
+    <Compile Include="DAO\PHIEUKHAM.cs" />
+    <Compile Include="DAO\sysdiagram.cs" />
+    <Compile Include="DAO\THUOC.cs" />
+    <Compile Include="DAO\TOATHUOC.cs" />
+    <Compile Include="DataAsset\DALBenhNhan.cs" />
+    <Compile Include="DataAsset\Connection.cs" />
+    <Compile Include="DataAsset\DALPhieuDK.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +106,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
